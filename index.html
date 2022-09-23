@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/colors/color-1.css">
+
+    <title>Responsive e-commerce website - Crypticalcoder</title>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+         <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="bx bxs-shopping-bags nav__logo-icon"></i>
+                e-shapper
+            </a>
+            
+            <div class="nav__menu" id="nav--menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">shop</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="cart.html" class="nav__link">cart</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="faq.html" class="nav__link">faq's</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__btns">
+                <div class="login__toggle" id="login__toggle">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="nav__shop" id="cart-snop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+                <div class="nav__toggle" id="nav__toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
+         </nav>
+    </header>
+
+    <!--=============== CART ===============-->
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart__close"></i>
+        <h2 class="cart__title-content">my cart</h2>
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/cart-1.png" alt="" class="cart__img">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">windbreaker</h3>
+                    <span class="cart__price">$12</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/cart-2.png" alt="" class="cart__img">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">cardigan hoodie</h3>
+                    <span class="cart__price">$16</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/cart-3.png" alt="" class="cart__img">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">cartoon</h3>
+                    <span class="cart__price">$10</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 item</span>
+            <span class="cart__prices-total">$30</span>
+        </div>
+    </div>
+
+    <!--=============== LOGIN ===============-->
+    <div class="login" id="login">
+        <i class="bx bx-x login__close" id="login-close"></i>
+        <h2 class="login__title-content">login</h2>
+
+        <form action="" class="login__form grid">
+            <div class="login__content">
+                <label for="" class="login__label">Email</label>
+                <input type="email" class="login__input">
+            </div>
+            <div class="login__content">
+                <label for="" class="login__label">password</label>
+                <input type="password" class="login__input">
+            </div>
+            <div>
+                <a href="#" class="button">sing in</a>
+            </div>
+            <div>
+                <p class="signup">not a member? <a href="registration.html">sign up now</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+    <section class="home container">
+        <div class="swiper home-swiper">
+            <div class="swiper-wrapper">
+                    <!-- home swiper -->
+                    <section class="siwper-slide">
+                    <div class="home__content grid">
+                        <div class="home__group">
+                            <img src="assets/img/slide-2.png" alt="" class="home__img">
+                            <div class="home__indicator"></div>
+                            <div class="home__details-img">
+                                <h4 class="home__details-title">the "Cardigan"</h4>
+                                <span class="home__details-subtitle">woolen</span>
+                            </div>
+                        </div>
+                        <div class="home__data">
+                            <h3 class="home__subtitle">#1 TRENDING ITEM</h3>
+                            <h1 class="home__title">ORIGINAL <br> IS NEVER <br> FINISHED</h1>
+                            <p class="home__description">
+                                this is a place of hope , meaning and purpose . visit and become a part of something bigger a movement that is changing lives.
+                            </p>
+                        </div>
+                    </div>
+                    </section>
+            </div>
+        </div>
+    </section>
+
+        <!--=============== DISCOUNT ===============-->
+        <section class="discount section">
+            
+        </section>
+
+        <!--=============== NEW ARRIVALS ===============-->
+        <section class="new section">
+            
+        </section>
+
+        <!--=============== STEPS ===============-->
+        <section class="steps section container">
+            
+        </section>
+
+        <!--=============== NEWSLETTER ===============-->
+        <section class="newsletter section">
+            
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+        
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+
+    <!--=============== STYLE SWITCHER ===============-->
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
